@@ -1,11 +1,13 @@
 <ul>
   {% for planet in site.pages %}
-    {% if planet.type == include.type %}
-      <li>
-        <img src="/img/planets/{{planet.image}}" alt="">
-        {{ planet.title }}
-        <p>{{planet.meta}}</p>
-      </li>
-    {% endif %}
+  {% if planet.type == include.type %}
+  <li>
+    <a href="{{planet.url}}">
+      <img src="/img/planets/{{planet.image}}" alt="Photo of {{planet.title}}">
+      <h3>{{ planet.title }}</h3>
+      <p>{{planet.meta}}</p>
+    </a>
+  </li>
+  {% endif %}
   {% endfor %}
 </ul>

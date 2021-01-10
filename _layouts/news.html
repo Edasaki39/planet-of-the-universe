@@ -6,8 +6,9 @@ layout: default
 
 <nav>
   <ul>
-    <li><a href="{% link news.html %}">Planetary News</a></li>
-    <li><a href="{% link animal.html %}">Animal News</a></li>
+    <li><a href="{% link news.html %} "{% if page.url contains 'news' %}class="current"{% endif %}>Planetary News</a></li>
+    <!-- <li><a href="{% link animal.html %}">Animal News</a></li> -->
+    <li><a href="{% link recently-discovered.html %}" {% if page.url contains 'recently-discovered' %}class="current"{% endif %}>Recently discovered planet</a></li>
   </ul>
 </nav>
 

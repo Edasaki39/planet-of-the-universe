@@ -1,5 +1,7 @@
 ---
 layout: default
+titleAfter: Stellar astronomical object orbiting a star
+meta: Discover many planets from the universe
 ---
 <h1>Planet of The Universe</h1>
 <p>Lots of planet in the universe.</p>
@@ -8,7 +10,7 @@ layout: default
 <ol>
   {% for planet in site.data.planet-types %}
       <li>
-        <a href="#">{{ planet.title }}</a>
+        <a href=/planets/{{planet.folder}}>{{ planet.title }}</a>
         {{ planet.content | markdownify }}
       </li>
   {% endfor %}

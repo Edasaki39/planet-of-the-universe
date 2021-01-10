@@ -1,3 +1,9 @@
 # Reading files
 exclude:
   - README
+
+permalink: pretty
+collections:
+  comets:
+    output: true
+    permalink: /comets/:path/

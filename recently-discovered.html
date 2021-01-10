@@ -1,11 +1,11 @@
 ---
 layout: news
-title: News
 ---
-<h1>Planetary News</h1>
+
+<h1>Recently discovered planets</h1>
 
 <ul>
-  {% for news in site.categories.news limit:2%}
+  {% for news in site.categories.recently-discovered limit:3 %}
   <li>
     <a href="{{ news.url }}">{{ news.title }}</a>
     <p>{{ news.excerpt }}</p>
